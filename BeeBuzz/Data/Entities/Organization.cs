@@ -10,5 +10,7 @@ namespace BeeBuzz.Data.Entities
 
         public int uniqID { get; set; }
 
+        public ApplicationUser User { get; set; }
+
     }
 }
