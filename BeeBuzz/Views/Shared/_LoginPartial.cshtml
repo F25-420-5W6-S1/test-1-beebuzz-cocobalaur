@@ -12,6 +12,16 @@
         <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
             <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
         </form>
+            <div class="form-floating mb-3">
+                <label asp-for="Organization">Organization</label>
+                <span asp-validation-for="Organization" class="text-danger"></span>
+            </div>
+
+            <div class="form-floating mb-3">
+                <label asp-for="Role">Role</label>
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+
     </li>
 }
 else
